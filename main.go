@@ -7,6 +7,7 @@ import (
 )
 
 const dbHost = "db"
+const port = 5432
 
 func main() {
 
@@ -16,7 +17,7 @@ func main() {
 
 	dbCfg := postgresql.Config{
 		Host:         dbHost,
-		Port:         5432,
+		Port:         port,
 		DatabaseName: "demo",
 		Username:     "demo",
 		Password:     "demo",
