@@ -6,6 +6,8 @@ import (
 	"github.com/ktartsch/migrate-golang/pkg/model"
 )
 
+const dbHost = "db"
+
 func main() {
 
 	fmt.Println("starting service")
@@ -13,7 +15,7 @@ func main() {
 	//config db
 
 	dbCfg := postgresql.Config{
-		Host:         "db",
+		Host:         dbHost,
 		Port:         5432,
 		DatabaseName: "demo",
 		Username:     "demo",
